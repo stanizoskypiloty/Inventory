@@ -16,8 +16,15 @@ public class Computer {
 		int Amount3=Unit3*Qty3;
 		int Amount4=Unit4*Qty4;
 		
+		double Sum1= Amount1;
+		double Sum2= Amount2;
+		double Sum3= Amount3;
+		double Sum4= Amount4;
+		
+		
 		int Subtotal=Amount1+Amount2+Amount3+Amount4;
-		double VAT=0.16*Subtotal;
+		double allTotal= Subtotal;
+        double VAT=0.16*Subtotal;
 		double totalAmount=Subtotal+VAT;
 		System.out.println("************************Adamson Computer Ltd**************************");
 		System.out.println("#99 ACS Building Glimore Ave. New Mla.. Quezon City * Tel No:123-4567");
@@ -45,7 +52,7 @@ public class Computer {
 		System.out.print("\t\t\t|");
 		System.out.print("\t");
 		System.out.print(Unit1);
-		System.out.println("\t\t|\t"+Amount1);
+		System.out.println("\t\t|\t"+Sum1);
 		System.out.println("-----------------------------------------------------------------------------------");
 		System.out.print(Qty2);
 		System.out.print("\t|\t");
@@ -53,7 +60,7 @@ public class Computer {
 		System.out.print("\t\t\t|");
 		System.out.print("\t");
 		System.out.print(Unit2);
-		System.out.println("\t\t|\t"+Amount2);
+		System.out.println("\t\t|\t"+Sum2);
 		System.out.println("-----------------------------------------------------------------------------------");
 		System.out.print(Qty3);
 		System.out.print("\t|\t");
@@ -61,7 +68,7 @@ public class Computer {
 		System.out.print("\t\t\t|");
 		System.out.print("\t");
 		System.out.print(Unit3);
-		System.out.println("\t\t|\t"+Amount3);
+		System.out.println("\t\t|\t"+Sum3);
 		System.out.println("-----------------------------------------------------------------------------------");
 		System.out.print(Qty4);
 		System.out.print("\t|\t");
@@ -70,9 +77,9 @@ public class Computer {
 		System.out.print("\t");
 		System.out.print(Unit4);
 		
-		System.out.println("\t\t|\t"+Amount4);
+		System.out.println("\t\t|\t"+Sum4);
 		System.out.println("==================================================================================");
-		System.out.println("\t\t\t\t\t\tSubtotal\t|\t"+Subtotal);
+		System.out.println("\t\t\t\t\t\tSubtotal\t|\t"+allTotal);
 		System.out.println("\t\t\t\t\t\t====================================");
 		System.out.println("\t\t\t\t\t\tVAT\t\t|\t"+VAT);
 		System.out.println("\t\t\t\t\t\t=====================================");
